@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/abstracto_oscuro"
+    tools:context=".PantallaSelectCase"
+    android:weightSum="100">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_weight="15"
+        android:orientation="horizontal"
+        android:background="@android:color/black"
+        android:weightSum="100">
+
+        <TextView
+            android:id="@+id/tvUserName"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="50"
+            android:gravity="center_vertical"
+            android:text="TextView"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tvUserMoney"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="50"
+            android:gravity="center_vertical"
+            android:text="TextView"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+
+    <GridView
+        android:id="@+id/caseList"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:layout_weight="70"
+        android:gravity="center"
+        android:numColumns="2"
+        android:padding="20dp"></GridView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_weight="15"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnCajas"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="30"
+            android:enabled="false"
+            android:text="Cajas">
+
+        </Button>
+
+        <Button
+            android:id="@+id/btnInventario"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="30"
+            android:onClick="PantallaInventario"
+            android:text="Inventario">
+
+        </Button>
+
+        <ImageButton
+            android:id="@+id/btnPreferencias2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="40"
+            android:adjustViewBounds="true"
+            android:background="@drawable/gear"
+            android:onClick="Preferencias"
+            android:scaleType="fitCenter" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

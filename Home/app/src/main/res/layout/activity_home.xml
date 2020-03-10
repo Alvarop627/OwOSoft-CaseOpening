@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/madera"
+    tools:context=".HomeActivity">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="351dp"
+        android:layout_height="350dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/tBienvenido"
+        android:layout_width="322dp"
+        android:layout_height="85dp"
+        android:layout_marginTop="360dp"
+        android:text="Bienvenido"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="45dp"
+        android:textStyle="bold"
+        app:fontFamily="@font/unlock"
+        app:layout_constraintBottom_toTopOf="@+id/bComenzar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.318" />
+
+    <Button
+        android:id="@+id/bComenzar"
+        android:layout_width="292dp"
+        android:layout_height="202dp"
+        android:layout_marginBottom="36dp"
+        android:background="@drawable/btnplay"
+        android:textColor="@android:color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
